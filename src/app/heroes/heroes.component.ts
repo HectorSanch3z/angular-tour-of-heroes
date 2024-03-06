@@ -1,18 +1,23 @@
 import { Component } from '@angular/core';
+import { NgIf, NgFor, UpperCasePipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes';
+import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 
 @Component({
+  standalone: true,
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
-  styleUrl: './heroes.component.css',
+  styleUrls: ['./heroes.component.css'],
+  imports: [FormsModule, NgIf, NgFor, UpperCasePipe, HeroDetailComponent],
 })
 export class HeroesComponent {
-  hero: Hero = {
-    id: 1,
-    name: 'Arturia',
-    country: 'England',
-    servant_type: 'Saber',
-    image:
-      'https://s1.zerochan.net/Saber.%28Fate.stay.night%29.600.3372713.jpg',
-  };
+  heroes = HEROES;
+  selectedHero?: Hero;
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }
