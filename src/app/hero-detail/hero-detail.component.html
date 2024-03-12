@@ -5,4 +5,20 @@
     <label for="hero-name">Hero name: </label>
     <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" />
   </div>
+  <div>
+    <label for="hero-country">Country of Origin: </label>
+    <input id="hero-country" [(ngModel)]="hero.country" placeholder="country" />
+  </div>
+  <div>
+    <label for="hero-servant">Type of Servant: </label>
+    <input
+      id="hero-servant"
+      [(ngModel)]="hero.servant_type"
+      placeholder="servant"
+    />
+  </div>
+  <div>
+    <label for="hero-image">Hero image: </label>
+    <img id="hero-image" [src]="hero.image" width="500" height="600" />
+  </div>
 </div>
