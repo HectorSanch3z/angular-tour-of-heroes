@@ -30,6 +30,6 @@ export const HEROES: Hero[] = [
     country: 'Greece',
     servant_type: 'Rider',
     image:
-      'https://scontent.fcjs1-2.fna.fbcdn.net/v/t39.30808-6/212227871_370542587772790_1033729357632917325_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF-IYYSGejLq6gSgi0csRL6-P_ZuHsGc434_9m4ewZzjdcBgd2AJRXYkBrlVf0xSVUr2_af2Vw3PLq7svvUiU4g&_nc_ohc=ihRSaUarlHkAX-uyXLp&_nc_ht=scontent.fcjs1-2.fna&oh=00_AfCC1Q7leHOXnKppWyCwPWoPNRg-tdP8o8jF5W6hHv_hUQ&oe=65F46146',
+      'https://cdn.donmai.us/original/d0/49/__medusa_and_medusa_fate_and_1_more_drawn_by_shachoo__d0491ded0583d1f8fd5c3e576b73b937.png',
   },
 ];
