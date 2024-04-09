@@ -8,7 +8,7 @@ import { Hero } from './hero';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 12, name: 'Dr. Nice' },
+      { id: 12, name: 'Van Gogh' , country: "Netherlands", servant_type: "Foreigner", image?: "https://static.wikia.nocookie.net/fategrandorder/images/d/d3/S295_Stage4.webp/revision/latest?cb=20220925052003";},
       { id: 13, name: 'Bombasto' },
       { id: 14, name: 'Celeritas' },
       { id: 15, name: 'Magneta' },
